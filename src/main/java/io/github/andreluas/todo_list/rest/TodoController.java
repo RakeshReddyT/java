@@ -22,7 +22,7 @@ import io.github.andreluas.todo_list.repository.TodoRepository;
 @RestController // Faz com que a classe TodoController, seja um componente do Spring
 // Scaneia e registra como componente rest, para que ele receba requisições e envie respostas
 @RequestMapping("/api/todos") // Mapeia url para qual sera feito as requisições 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class TodoController {
     
     @Autowired // Quando spring fizer mapeamento do Controller, faça injeção desta dependencia repository
